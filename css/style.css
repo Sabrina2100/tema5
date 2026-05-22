@@ -6,8 +6,12 @@
 
 body {
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
   background: #ffffff;
   color: #222;
+=======
+  background-color: white;
+>>>>>>> 76a1dc045999c2540d3d1a8e7c3f904b211acdad
 }
 
 /* MOBILE FIRST */
