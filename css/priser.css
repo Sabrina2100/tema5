@@ -39,7 +39,7 @@ header {
 }
 
 .header-inner {
-  height: 92px;
+  max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,6 +49,11 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
+  max-height: 100%;
+}
+
+.logo img {
+  max-height: 100px;
 }
 
 .logo-icon {
@@ -186,6 +191,7 @@ nav a.active {
   border: 1px solid #1dc5ef;
   border-radius: 26px;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 
 .pricing-header,
