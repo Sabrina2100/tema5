@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Priser</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/priser.css" />
-
   </head>
+
   <body>
-  
     <header>
-      <div class="container nav-container">
+      <div class="container header-inner">
         <div class="logo">
-          <img src="imgs/logo1.png" alt="Ejby Tandlægehus Logo" />
+          <div class="logo-icon"></div>
+
           <div class="logo-text">
             <h1>Ejby Tandlægehus</h1>
             <p>Sunde tænder hele livet</p>
@@ -21,21 +20,159 @@
         </div>
 
         <nav>
-          <a href="index.html">FORSIDE</a>
-          <a href="priser.html">PRISER</a>
-          <a href="kontakt.html">KONTAKT</a>
-          <a href="#" class="booking-btn">ONLINE BOOKING</a>
+          <a href="index.html">Forside</a>
+          <a href="priser.html" class="active">Priser</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="booking.html" class="booking-btn">Online Booking</a>
         </nav>
+
+        <div class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
-    <div>
-      <h1>Priser</h1>
-    </div>
-    
-    <div class="grid1-1">
-      container
 
-    </div>
+    <main>
+      <section class="hero">
+        <img src="/imgs/operation.png" alt="Tandlæge" />
+      </section>
 
-</body>
+      <div class="container">
+        <section class="info-grid">
+          <div class="info-box">
+            <div><img src="/icons/card-icon.svg" alt="Prisliste" /></div>
+
+            <div>
+              <h3>Prisliste pr. 1. januar 2026</h3>
+
+              <p>De nævnte priser er inklusive prisen på eventuel teknik, men eksklusive priser på bedøvelse, røntgenbilleder mm.</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div><img src="/icons/graduation-icon.svg" alt="Prisliste" /></div>
+
+            <div>
+              <h3>Gratis tandpleje for unge mellem 18-21 år</h3>
+
+              <p>Unge mellem 18 og 21 år kan være omfattet af ordningen om gratis tandpleje.</p>
+
+              <a href="#">Læs mere om ordning →</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing-card">
+          <div class="pricing-header">
+            <div></div>
+            <div>Sygesikring</div>
+            <div>Privatpris</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Fyldning i lille kindtand (præmolar) på 2 flader</p>
+            <div class="price-blue">Kr. 1.025,-</div>
+            <div class="price-black">Kr. 1.200,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Fyldning på stor kindtand (molar) i undermund på 3 flader</p>
+            <div class="price-blue">Kr. 1.750,-</div>
+            <div class="price-black">Kr. 2.000,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Krone af metal med påbrændt porcelæn (MK-krone) i stor kindtand (molar), i undermunden.</p>
+
+            <div class="price-blue">-</div>
+            <div class="price-black">Kr. 6.300,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Fortand inkl. indmaling</p>
+            <div class="price-blue">Kr. 7.000,-</div>
+            <div class="price-black">-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Rodbehandling i fortand, overkæbe</p>
+            <div class="price-blue">Kr. 1.734,-</div>
+            <div class="price-black">Kr. 2.000,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Rodbehandling i 3 kanaler, kindtand i undermunden</p>
+            <div class="price-blue">Kr. 3.186,-</div>
+            <div class="price-black">Kr. 3.400,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Samlet gennemsnitspris for rodbehandling</p>
+            <div class="price-blue">Kr. 5.800,-</div>
+            <div class="price-black">Kr. 7.000,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Erstatning for lille kindtand (præmolar) af metal med påbrændt porcelæn</p>
+
+            <div class="price-blue">Kr. 18.900,-</div>
+            <div class="price-black">Kr. 21.000,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>En lokal bedøvelse</p>
+            <div class="price-blue">-</div>
+            <div class="price-black">Kr. 390,-</div>
+          </div>
+
+          <div class="pricing-row">
+            <p>Forsikringserklæring</p>
+            <div class="price-blue">-</div>
+            <div class="price-black">Kr. 1.150,-</div>
+          </div>
+        </section>
+
+        <section class="question-box">
+          <div class="question-circle">?</div>
+
+          <div>
+            <p>For yderligere spørgsmål vedr. priser:</p>
+            <strong>Kontakt personalet</strong>
+          </div>
+        </section>
+
+        <section class="footer-grid">
+          <div class="footer-card">
+            <div><img src="/icons/calendar-icon.svg" alt="Prisliste" /></div>
+
+            <h3>Påskelukket</h3>
+
+            <p>Klinikken holder påskeferie til og med tirsdag den 7-4-2026.</p>
+          </div>
+
+          <div class="footer-card">
+            <div><img src="/icons/location-icon.svg" alt="Prisliste" /></div>
+
+            <h3>Ejbyvej 59, 1.</h3>
+
+            <p>4623 Lille Skensved</p>
+          </div>
+
+          <div class="footer-card">
+            <div><img src="/icons/tooth-icon.svg" alt="Prisliste" /></div>
+
+            <h3>Kroner og broer</h3>
+
+            <p>Læs information om kroner og broer samt andre behandlinger her:</p>
+
+            <a href="#">Kroner og broer</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>Opdateret Maj 2026 · Copyright 2026 Ejby Tandlægehus</footer>
+  </body>
 </html>
