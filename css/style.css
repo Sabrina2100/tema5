@@ -13,13 +13,19 @@ body {
 /* MOBILE FIRST */
 
 /* HEADER */
-.header {
+header {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-inner {
+  max-height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 16px;
-  background: white;
-  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
 }
 
 .logo {
@@ -60,6 +66,7 @@ body {
 .hero {
   width: 100%;
   position: relative;
+  
 }
 
 .hero img {
@@ -71,7 +78,8 @@ body {
 .hero-card {
   padding: 24px 16px;
   text-align: center;
-  background: white;
+  background-color: rgb(217,217,217, 1);
+  margin-bottom: 80px;
 }
 
 .hero-card h2 {
@@ -91,6 +99,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background-color: ;
+}
+
+.hero-banner img {
+  border-radius: 0px;
+  margin: 0px;
+  width: 100%;
 }
 
 .primary-btn {
@@ -125,8 +140,6 @@ footer p {
 @media (min-width: 768px) {
   .hero-card {
     max-width: 520px;
-    background: rgba(255, 255, 255, 0.554);
-    padding: 40px;
     position: absolute;
     left: 48%;
     bottom: -50px;
@@ -168,14 +181,11 @@ footer p {
 
 /* DESKTOP */
 @media (min-width: 1024px) {
-  .header {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 40px;
-  }
+
 
   .logo img {
     width: 85px;
+    position: left: -100px;
   }
 
   .logo-text h1 {
@@ -219,7 +229,7 @@ footer p {
   }
 
   .hero-card {
-    bottom: -362px;
+
   }
 
   footer {

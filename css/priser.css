@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: #f4f4f4;
@@ -38,6 +43,8 @@ header {
   z-index: 20;
 }
 
+
+
 .header-inner {
   max-height: 100%;
   display: flex;
@@ -45,15 +52,24 @@ header {
   justify-content: space-between;
 }
 
+.header-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px 0 0;
+}
+
 .logo {
   display: flex;
   align-items: center;
   gap: 16px;
   max-height: 100%;
+  position: relative;
+  padding: 5px;
 }
 
 .logo img {
-  max-height: 100px;
+  max-height: 80px;
 }
 
 .logo-icon {
@@ -131,7 +147,7 @@ nav a.active {
 
 /* HERO */
 
-.hero img {
+.hero-banner img {
   border-radius: 0px;
   margin: 0px;
   width: 100%;
@@ -182,6 +198,65 @@ nav a.active {
   display: inline-block;
   margin-top: 10px;
   font-size: 14px;
+}
+
+/* HERO CARD */
+
+.hero {
+  position: relative;
+}
+
+.hero-card {
+  position: absolute;
+  left: 50%;
+  bottom: -120px;
+  transform: translateX(-50%);
+  width: 520px;
+  background: rgba(255, 255, 255, 0.7);  
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-card h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.hero-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .hero-card {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding-bottom: 0;
+  }
+}
+
+.primary-btn {
+  display: block;
+  background: #00b7e5;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.primary-btn:hover {
+  background: #0097bf;
 }
 
 /* TABLE */
@@ -321,7 +396,7 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .header-inner {
     height: 110px;
   }
@@ -375,7 +450,7 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
     padding: 0 14px;
   }
