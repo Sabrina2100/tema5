@@ -43,8 +43,6 @@ header {
   z-index: 20;
 }
 
-
-
 .header-inner {
   max-height: 100%;
   display: flex;
@@ -97,6 +95,7 @@ header {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 6px;
+  color: #00a8d8;
 }
 
 .logo-text p {
@@ -212,7 +211,7 @@ nav a.active {
   bottom: -120px;
   transform: translateX(-50%);
   width: 520px;
-  background: rgba(255, 255, 255, 0.7);  
+  background: rgba(255, 255, 255, 0.7);
   padding: 40px;
   text-align: center;
 }
