@@ -41,7 +41,7 @@
 }
 
 .grid3-1 p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -108,4 +108,17 @@
 
 .space-top {
   margin-top: 200px;
+}
+
+
+@media (max-width: 768px) {
+  .grid-reviews {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+
+  .grid3-1 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
