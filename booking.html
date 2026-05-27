@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Priser</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/booking.css" />
   </head>
@@ -13,7 +13,9 @@
       <div class="header-container header-inner">
         <div class="logo">
           <div>
-            <img src="imgs/nytlogo.png" alt="Ejby Tandlægehus logo" />
+            <a href="index.html"> 
+              <img src="imgs/nytlogo.png" alt="Ejby Tandlægehus logo" />
+            </a>
           </div>
 
           <div class="logo-text">
@@ -141,5 +143,13 @@
     </main>
 
     <footer>Opdateret Maj 2026 · Copyright 2026 Ejby Tandlægehus</footer>
+        <script>
+      const toggle = document.querySelector(".mobile-toggle");
+      const nav = document.querySelector("nav");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

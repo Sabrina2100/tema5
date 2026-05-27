@@ -45,10 +45,6 @@
 
 /* HERO CARD */
 
-.hero {
-  position: relative;
-}
-
 .hero-card {
   position: absolute;
   left: 50%;
@@ -84,22 +80,6 @@
   .hero {
     padding-bottom: 0;
   }
-}
-
-.primary-btn {
-  display: block;
-  background: #00b7e5;
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-  border-radius: 999px;
-  font-weight: bold;
-  transition: 0.3s;
-  margin-bottom: 10px;
-}
-
-.primary-btn:hover {
-  background: #0097bf;
 }
 
 /* TABLE */
@@ -233,31 +213,6 @@
 /* MOBILE */
 
 @media (max-width: 768px) {
-  .header-inner {
-    height: 110px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .mobile-toggle {
-    display: flex;
-  }
-
-  .logo-icon {
-    width: 58px;
-    height: 58px;
-  }
-
-  .logo-text h1 {
-    font-size: 24px;
-  }
-
-  .logo-text p {
-    font-size: 15px;
-  }
-
   .info-grid {
     grid-template-columns: 1fr;
   }
@@ -284,32 +239,13 @@
   .footer-card {
     min-height: auto;
   }
-}
 
-@media (max-width: 768px) {
   .container {
     padding: 0 14px;
   }
 
   .header-inner {
     height: 90px;
-  }
-
-  .logo {
-    gap: 12px;
-  }
-
-  .logo-icon {
-    width: 50px;
-    height: 50px;
-  }
-
-  .logo-text h1 {
-    font-size: 20px;
-  }
-
-  .logo-text p {
-    font-size: 13px;
   }
 
   .pricing-card {

@@ -12,7 +12,9 @@
       <div class="header-container header-inner">
         <div class="logo">
           <div>
-            <img src="imgs/nytlogo.png" alt="Ejby Tandlægehus logo" />
+            <a href="index.html">
+              <img src="imgs/nytlogo.png" alt="Ejby Tandlægehus logo" />
+            </a>
           </div>
 
           <div class="logo-text">
@@ -47,8 +49,8 @@
           <p>Vi tilbyder professionel tandpleje i trygge rammer. Vores mål er sunde tænder hele livet.</p>
 
           <div class="hero-buttons">
-            <a href="omos.html" class="primary-btn">Læs mere om os</a>
-            <a href="#" class="primary-btn">Online booking</a>
+            <a href="om-os.html" class="primary-btn">Læs mere om os</a>
+            <a href="booking.html" class="primary-btn">Online booking</a>
           </div>
         </div>
       </section>
@@ -56,5 +58,13 @@
     <footer>
       <p>Copyright 2025 Ejby Tandlægehus · Ejbyvej 59 · 4623 Lille Skensved · Tlf. 56 82 12 03</p>
     </footer>
+    <script>
+      const toggle = document.querySelector(".mobile-toggle");
+      const nav = document.querySelector("nav");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

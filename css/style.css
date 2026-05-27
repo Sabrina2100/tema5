@@ -191,6 +191,22 @@ nav a.active {
   margin-bottom: 24px;
 }
 
+.primary-btn {
+  display: block;
+  background: #00b7e5;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.primary-btn:hover {
+  background: #0097bf;
+}
+
 footer {
   text-align: center;
   color: #777;
@@ -208,5 +224,48 @@ footer {
 
   .hero {
     padding-bottom: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 90px;
+    left: 0;
+
+    width: 100%;
+    background: white;
+
+    padding: 30px 0;
+    gap: 24px;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 0.3s ease;
+  }
+
+  nav.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+  }
+  }
+
+  .mobile-toggle span {
+    width: 34px;
+    height: 3px;
+    background: #1dc5ef;
+    border-radius: 20px;
   }
 }

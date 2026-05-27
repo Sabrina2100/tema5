@@ -13,7 +13,9 @@
       <div class="header-container header-inner">
         <div class="logo">
           <div>
-            <img src="imgs/nytlogo.png" alt="Ejby Tandlægehus logo" />
+            <a href="index.html"> 
+              <img src="imgs/nytlogo.png" alt="Ejby Tandlægehus logo" />
+            </a>
           </div>
 
           <div class="logo-text">
@@ -140,5 +142,13 @@
   </div>
   </div>
 </section>
+    <script>
+      const toggle = document.querySelector(".mobile-toggle");
+      const nav = document.querySelector("nav");
+
+      toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
